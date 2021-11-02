@@ -1,0 +1,5 @@
+{
+    "tableName": "area",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S"
+}

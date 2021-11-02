@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/area",
+      "lambdaFunction": "area",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/area"
+    }
+  ],
+  "resourceName": "area",
+  "apiName": "area",
+  "functionArns": [
+    {
+      "lambdaFunction": "area"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-area-dev-23636-authRole",
+    "unAuthRoleName": "amplify-area-dev-23636-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "area",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

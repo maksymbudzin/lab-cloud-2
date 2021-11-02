@@ -1,0 +1,98 @@
+.header-secret{
+    border-bottom: 3px  solid black;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.heder-text-secret{
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace;
+}
+.text_decoration{
+    text-align: center;
+}
+.element-secret{
+    width: 20%;
+    background-image: url("https://prd-webrepository.firabarcelona.com/wp-content/uploads/sites/9/2019/07/08084955/20190422.jpg");
+    border: 3px  solid black;
+    border-radius: 1rem;
+}
+.main-section-secret-second{
+    margin:2rem 0rem ;
+    padding: 1rem;
+    border: 3px  solid black;
+
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.main-section-secret{
+    margin:2rem 0rem ;
+    padding: 1rem;
+    border: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    
+align-content: flex-start;
+
+flex-wrap: wrap;
+    border-radius: 2rem;
+}
+.link-protocol-secret{
+        
+   
+    text-decoration: none;
+}
+.create_template_button_t-secret {
+    background: transparent;
+    color: black;
+    font-size: 15px;
+    margin: 1rem;
+}
+.create_template_button_t-secret {
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 1.1rem;
+    height: 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create_template_button_t-secret.btn-background-slide::before {
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: black;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.create_template_button_t-secret.btn-background-slide:hover::before {
+    transform: scaleX(1);
+}
+
+.create_template_button_t-secret.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+.create_template_button_t-secret.btn-background-slide:hover {
+    color: white;
+}
+.info-secret{
+    
+align-items: center;
+}
