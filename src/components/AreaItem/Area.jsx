@@ -20,7 +20,7 @@ function Area() {
     };
     useEffect(() => {
         fetchData();
-    }, []);
+    }, [textObj]);
 
 
     return (
@@ -68,6 +68,15 @@ function Area() {
                                     justifyContent: "space-around"
                                 }}>
                                     <span style={{marginLeft : "85px", background: 'rgba(255, 255, 255, 0.8)'}}>
+                                        times tamp: {obj.timestamp.S}
+                                    </span>
+                                    <span style={{marginLeft : "85px", background: 'rgba(255, 255, 255, 0.8)'}}>
+                                        id of sensor: {obj.sensor_id.S}
+                                    </span>
+                                    <span style={{marginLeft : "85px", background: 'rgba(255, 255, 255, 0.8)'}}>
+                                        type of sensor: {obj.sensor_type.S}
+                                    </span>
+                                    <span style={{marginLeft : "85px", background: 'rgba(255, 255, 255, 0.8)'}}>
                                         Локація: {obj.location.S}
                                     </span>
                                     <span style={{marginLeft : "85px", background: 'rgba(255, 255, 255, 0.8)'}}>
@@ -75,7 +84,7 @@ function Area() {
                                         Вологість: {obj.humidity.S}
                                     </span>
                                     <span style={{marginLeft : "85px", background: 'rgba(255, 255, 255, 0.8)'}}>
-                                        Освітлення: {obj.lighting.S}
+                                        Освітлення: {obj.lux.S}
                                     </span>
 
 
