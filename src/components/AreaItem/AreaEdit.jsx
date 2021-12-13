@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import TextField from '@material-ui/core/TextField';
-import {API} from 'aws-amplify'
+
 
 function AreaEdit(params) {
     const [timestamp, setTimestamp] = useState("false")
@@ -100,21 +100,21 @@ function AreaEdit(params) {
 
 async function EditArea(timestamp, sensor_id, sensor_type ,location, humidity, lux, apiKey) {
 
-    const data = await API.put('area', `/area/${localStorage.getItem("selectedItem")}`, {
-
-        body: {
-            timestamp: timestamp,
-            sensor_id: sensor_id,
-            sensor_type: sensor_type,
-            location: location,
-            humidity: humidity,
-            lux: lux,
-            API_KEY: apiKey
-
-        }
-
-    })
-    console.log(data)
+    // const data = await API.put('area', `/area/${localStorage.getItem("selectedItem")}`, {
+    //
+    //     body: {
+    //         timestamp: timestamp,
+    //         sensor_id: sensor_id,
+    //         sensor_type: sensor_type,
+    //         location: location,
+    //         humidity: humidity,
+    //         lux: lux,
+    //         API_KEY: apiKey
+    //
+    //     }
+    //
+    // })
+    // console.log(data)
 }
 
 

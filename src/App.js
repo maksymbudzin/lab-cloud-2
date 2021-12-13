@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Area from './components/AreaItem/Area';
 import AreaNew from './components/AreaItem/AreaNew';
 import { useEffect } from 'react';
-
 import AreaEdit from './components/AreaItem/AreaEdit';
 
  

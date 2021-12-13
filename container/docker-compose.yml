@@ -1,0 +1,27 @@
+version: '3'
+services:
+  back:
+    hostname: back
+    image: makslviv/back
+    environment:
+      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+      - AWS_REGION=us-west-2
+      - STORAGE_UKLONDB_NAME=area-dev
+    build:
+      dockerfile: ./back/Dockerfile
+    deploy:
+      x-aws-autoscaling:
+        cpu: 20
+        max: 3
+    ports:
+      - 5000:5000
+  front:
+    hostname: front
+    depends_on:
+      - back
+    image: makslviv/front
+    build:
+      dockerfile: ./front/Dockerfile
+    ports:
+      - 80:80
