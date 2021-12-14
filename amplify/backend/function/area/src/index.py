@@ -19,12 +19,17 @@ BASE_ROUTE = "/area"
 @app.route(BASE_ROUTE, methods=['POST'])
 def create_area():
     request_json = request.get_json()
-     
+    if request_json.get("API_KEY") != "04012002":
+        return jsonify(message="Wrong API key")
     client.put_item(TableName=TABLE, Item={
         'id': {'S': str(uuid4())},
         'location': {'S': request_json.get("location")},
         'humidity': {'S': request_json.get("humidity")},
         'lighting': {'S': request_json.get("lighting")},
+        'sensor_id': {'S': request_json.get("sensor_id")},
+        'sensor_type': {'S': request_json.get("sensor_type")},
+        'timestamp': {'S': request_json.get("timestamp")},
+        'API_KEY': {'S': request_json.get("API_KEY")},
          
     })
     return jsonify(message="area created")
