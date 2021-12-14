@@ -18,5 +18,3 @@ while True:
     print("SENT:", myobj)
     print(x.text)
     time.sleep(10)
-~                                                                                                                                                                                                          
-~                     
