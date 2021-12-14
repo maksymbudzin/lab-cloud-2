@@ -25,7 +25,7 @@ def create_area():
         'id': {'S': str(uuid4())},
         'location': {'S': request_json.get("location")},
         'humidity': {'S': request_json.get("humidity")},
-        'lighting': {'S': request_json.get("lighting")},
+        'lux': {'S': request_json.get("lux")},
         'sensor_id': {'S': request_json.get("sensor_id")},
         'sensor_type': {'S': request_json.get("sensor_type")},
         'timestamp': {'S': request_json.get("timestamp")},
