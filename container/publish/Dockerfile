@@ -7,7 +7,7 @@ RUN apt-get install -y git
 
 RUN git clone https://github.com/maksymbudzin/lab-cloud-2.git
 
-WORKDIR /publish/lab-cloud-2/container/publish
+WORKDIR /publish/lab-cloud-2/post-service
 
 RUN pip3 install requests
 
